@@ -126,14 +126,17 @@ recursive step is being updated, and thus keeping of previous operations is not 
 `open(file_name, ‘r’)`
 `r` for read, `w` for write.
 
-* After opening there are 4 ways to read: `file_name.readline() #print lines with new line (\n) spaces.`
+* After opening there are 4 ways to read: 
+
 	
 	```
+	>>>file_name.readline()  #print lines with new line (\n) spaces
+	
 	>>>for line in file_name:
-		print line  #print the whole file
+		print line   #print the whole file
 
-	>>>print(file_name.read()) #whole file in a single string. (including  the newline character (\n))
+	>>>print(file_name.read())  #whole file in a single string. (including  the newline character (\n))
 
-	>>>file_name.readlines() #list of all the lines (including  the newline character (\n))
+	>>>file_name.readlines()  #list of all the lines (including  the newline character (\n))
 	
 	```
