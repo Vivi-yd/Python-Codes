@@ -45,100 +45,94 @@ This list doesn't have to be particularly detailed, but should be a starting poi
 ##<week_4>
 
 ####Generators:
-	* Is an "Iterator", where a sequences of value is generated, just like a List, but differ from list in that, the whole
-	* sequences DOES NOT get produced all at once before iteration starts to initiate, rather, the value gets produce as iteration progresses.
 
-	* Generator Expression (*do not confuse with List Comprehension*):
+* Is an "Iterator", where a sequences of value is generated, just like a List, but differ from list in that, the whole
+* sequences DOES NOT get produced all at once before iteration starts to initiate, rather, the value gets produce as iteration progresses.
+
+* Generator Expression (*do not confuse with List Comprehension*):
+
 		**A list comprehension** : `print "max in list:", max([num * 2 - 3 for num in range(7)])` 
 		*This expression generates a list before getting feed into the "max" function.
 
 		**A generator expression** : `print "max in gen:", max(num * 2 - 3 for num in range(7))` 
 		*in this case "max" function takes in a value whenever it gets generated, not taking the whole list.
 
- 	* Generator Function: contains the `yeild`, which unlike `return`, do not ends the function, but instead, gives or *yeild* a value and continue to run the function until is told to stop.
+ * Generator Function: contains the `yeild`, which unlike `return`, do not ends the function, but instead, gives or *yeild* a value and continue to run the function until is told to stop.
 	
-	**However, Generator Function CAN contain `return` in order to stop the program.**
+**However, Generator Function CAN contain `return` in order to stop the program.**
 
 
 ####Stacks and Queues:
-	Types of data structure (e.g. Class defining) that restrict the way data getting extracted, following LIFO for Stack and FIFO for Queues.
+
+Types of data structure (e.g. Class defining) that restrict the way data getting extracted, following LIFO for Stack and FIFO for Queues.
 	
 ####Inheritance:
-	* Subclass inherits methods from Baseclass, multiple subclasses can inherits from the same base.
-	* Methods that got redefined in subclasses will Overwrite the methods with the same names from base.
-	
-	**syntax for defining a subclass that inherits from a baseclass named Base**: `class Sub(Base):`
-	
 
-4. Duck Typing:
-	A way of variables handling used in some languagues such as python, that many others do not, like Java.
-	In language that uses duck typing, types of variables are not explicitly defined, thus a program will not
-	consider whether a method is suitable to be called on the variable before executing to ensure correct behavior, 
-	rather it will throw errors when execution fails.
-	"When I see a bird that walks like a duck and swims like a duck and quacks like a duck, I call that bird a duck"
+* Subclass inherits methods from Baseclass, multiple subclasses can inherits from the same base.
+* Methods that got redefined in subclasses will Overwrite the methods with the same names from base.
+	
+**syntax for defining a subclass that inherits from a baseclass named Base**: `class Sub(Base):`
 	
 
-5. Search method:
+####Duck Typing:
+
+* A way of variables handling used in some languagues such as python, that many others do not, like Java.
+* In language that uses duck typing, types of variables are not explicitly defined, thus a program will not consider whether a method is suitable to be called on the variable before executing to ensure correct behavior, rather it will throw errors when execution fails.
+
+*"When I see a bird that walks like a duck and swims like a duck and quacks like a duck, I call that bird a duck"*
 	
-	-BFS: where an initial point is chosen, and the search spread outward in all directions, checking whether 
-	      the neighbor of those searched cells are searched and update accordingly.
+
+####Search method:
 	
-	-DFS: where an initial point is given, and the search begin	the search unidirectionally until deadend is reached,
-	      then change another direction to continue.
+* BFS: where an initial point is chosen, and the search spread outward in all directions, checking whether the neighbor of those searched cells are searched and update accordingly.
+	
+* DFS: where an initial point is given, and the search begin the search unidirectionally until deadend is reached, then change another direction to continue.
 
->>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
-<week_5>
 
-1. Recursion:
+##<week_5>
 
-	- Define a function and then call itself with less (smaller) data set after each successive calls.
-	- It is used to solve problem which consists of smaller sub-problem with similar characteristics.
-		# First a base case (can be solved easily at once) is identified and defied
-		# Then Recursive or Inductive steps are defined to aid the solving of problem by repetive calls to that step.
+####Recursion:
+
+* Define a function and then call itself with less (smaller) data set after each successive calls.
+* It is used to solve problem which consists of smaller sub-problem with similar characteristics.
+	* First a base case (can be solved easily at once) is identified and defied
+	* Then Recursive or Inductive steps are defined to aid the solving of problem by repetive calls to that step.
 		
 
-If a recursive function is designed so that each invocation of the body makes at most one new recursive call, this is
-known as linear recursion. (The second fib function which I wrote is an example) . The binary search code too is linear. 
+* If a recursive function is designed so that each invocation of the body makes at most one new recursive call, this is known as linear recursion. (The second fib function which I wrote is an example) . The binary search code too is linear. 
 
-A recursion is a tail recursion if any recursive call that is made from one context is the very
-last operation in that context, with the return value of the recursive call (if any) immediately returned 
-by the enclosing recursion. By necessity, a tail recursion must be a linear recursion. 
-(In the binary search method we have used tail recursion) . 
+* A recursion is a tail recursion if any recursive call that is made from one context is the very last operation in that context, with the return value of the recursive call (if any) immediately returned by the enclosing recursion. By necessity, a tail recursion must be a linear recursion. (In the binary search method we have used tail recursion) . 
 
-- Traditional recursive function calls all of the recursive steps before computing the result at the end 
+* **Traditional**: recursive function calls all of the recursive steps before computing the result at the end 
 and return the answer right after that computation.
 
-- Tail recursion, computes the result before proceeding into the next recursive step, the input of the next 
+* **Tail recursion**: computes the result before proceeding into the next recursive step, the input of the next 
 recursive step is being updated, and thus keeping of previous operations is not required. 
 
 
-2. Recurrence:
+####Recurrence:
 
-	-An equation that defines a sequences recursively, when 1 or more base value given initially, 
-	all subsequent terms is defined as a function of the preceding terms.
+* An equation that defines a sequences recursively, when 1 or more base value given initially, all subsequent terms is defined as a function of the preceding terms.
 
-	-A closed form solution provides a single function of n that approximate a recurrence relation 
-	to produce the nth term of the sequences but eliminate the recursive component of the function.	
+* A closed form solution provides a single function of n that approximate a recurrence relation to produce the nth term of the sequences but eliminate the recursive component of the function.	
 
-3. Reading File:
+####Reading File:
 
-	Reading off network, will need urllib2 or codeskuptor module and call it as in this example:
-	http://www.codeskulptor.org/#examples_files.py
+* Reading off network, will need urllib2 or codeskuptor module and call it as in [this example](http://www.codeskulptor.org/#examples_files.py)
 
-	Reading off hard-drive will need to provide the FULL path of the file location to the window 
-	and assigned it as file_name, then call: 
+* Reading off hard-drive will need to provide the FULL path of the file location to the window and assigned it as file_name, then call: 
+`open(file_name, ‘r’)`
+`r` for read, `w` for write.
 
-	>>> open(file_name, ‘r’)
-	** ‘r’ for read, ‘w’ for write.
+* After opening there are 4 ways to read: `file_name.readline() #print lines with new line (\n) spaces.`
+	
+	```
+	>>>for line in file_name:
+		print line  #print the whole file
 
-	After opening there are 4 ways to read:
+	>>>print(file_name.read()) #whole file in a single string. (including  the newline character (\n))
 
-	- file_name.readline() -- print lines with new line (\n) spaces.
-
-	- for line in file_name:
-		print line  -- print the whole file
-
-	- print(file_name.read()) -- whole file in a single string. (including  the newline character (\n))
-
-	- file_name.readlines() -- list of all the lines (including  the newline character (\n))
+	>>>file_name.readlines() #list of all the lines (including  the newline character (\n))
+	
+	```
