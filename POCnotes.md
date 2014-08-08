@@ -2,7 +2,7 @@
 
 ***
 
-##<week_1>
+##week 1
 
 ####Designing Programs:
 
@@ -43,7 +43,7 @@
 
 ***
 
-##<week_4>
+##week 4
 
 ####Generators:
 
@@ -91,7 +91,7 @@ Types of data structure (e.g. Class defining) that restrict the way data getting
 
 ***
 
-##<week_5>
+##week 5
 
 ####Recursion:
 
