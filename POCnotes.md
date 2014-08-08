@@ -52,19 +52,19 @@ This list doesn't have to be particularly detailed, but should be a starting poi
 * Generator Expression (*do not confuse with List Comprehension*):
 
 **A list comprehension** : `print "max in list:", max([num * 2 - 3 for num in range(7)])` 
-*This expression generates a list before getting feed into the "max" function.
+* This expression generates a list before getting feed into the "max" function.
 
 **A generator expression** : `print "max in gen:", max(num * 2 - 3 for num in range(7))` 
 * in this case "max" function takes in a value whenever it gets generated, not taking the whole list.
 
 * Generator Function: contains the `yeild`, which unlike `return`, do not ends the function, but instead, gives or *yeild* a value and continue to run the function until is told to stop.
 	
-*However, Generator Function **CAN** contain `return` in order to stop the program.
+* However, Generator Function **CAN** contain `return` in order to stop the program.
 
 
 ####Stacks and Queues:
 
-Types of data structure (e.g. Class defining) that restrict the way data getting extracted, following LIFO for Stack and FIFO for Queues.
+Types of data structure (e.g. Class defining) that restrict the way data getting extracted, following **LIFO** for Stack and **FIFO** for Queues.
 	
 ####Inheritance:
 
