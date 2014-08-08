@@ -1,5 +1,6 @@
 #Notes here --: 
 
+***
 
 ##<week_1>
 
@@ -37,10 +38,10 @@
 	* Think more and rewrite to simplify convoluted code.
 	* dentify computational bottlenecks via counting and rewrite to improve the performance of slow-running code.
 	
-make a list of the steps that you follow when building a program to solve a particular problem. 
-This list doesn't have to be particularly detailed, but should be a starting point
+  make a list of the steps that you follow when building a program to solve a particular problem. 
+  This list doesn't have to be particularly detailed, but should be a starting point
 
-
+***
 
 ##<week_4>
 
@@ -88,7 +89,7 @@ Types of data structure (e.g. Class defining) that restrict the way data getting
 	
 * DFS: where an initial point is given, and the search begin the search unidirectionally until deadend is reached, then change another direction to continue.
 
-
+***
 
 ##<week_5>
 
