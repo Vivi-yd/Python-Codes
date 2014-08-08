@@ -46,20 +46,20 @@ This list doesn't have to be particularly detailed, but should be a starting poi
 
 ####Generators:
 
-* Is an "Iterator", where a sequences of value is generated, just like a List, but differ from list in that, the whole
-* sequences DOES NOT get produced all at once before iteration starts to initiate, rather, the value gets produce as iteration progresses.
+* Is an *Iterator*, where a sequences of value is generated, just like a List, but differ from list in that, the whole
+* sequences **DOES NOT** get produced all at once before iteration starts to initiate, rather, the value gets produce as iteration progresses.
 
 * Generator Expression (*do not confuse with List Comprehension*):
 
-		**A list comprehension** : `print "max in list:", max([num * 2 - 3 for num in range(7)])` 
-		*This expression generates a list before getting feed into the "max" function.
+**A list comprehension** : `print "max in list:", max([num * 2 - 3 for num in range(7)])` 
+*This expression generates a list before getting feed into the "max" function.
 
-		**A generator expression** : `print "max in gen:", max(num * 2 - 3 for num in range(7))` 
-		*in this case "max" function takes in a value whenever it gets generated, not taking the whole list.
+**A generator expression** : `print "max in gen:", max(num * 2 - 3 for num in range(7))` 
+* in this case "max" function takes in a value whenever it gets generated, not taking the whole list.
 
- * Generator Function: contains the `yeild`, which unlike `return`, do not ends the function, but instead, gives or *yeild* a value and continue to run the function until is told to stop.
+* Generator Function: contains the `yeild`, which unlike `return`, do not ends the function, but instead, gives or *yeild* a value and continue to run the function until is told to stop.
 	
-**However, Generator Function CAN contain `return` in order to stop the program.**
+*However, Generator Function **CAN** contain `return` in order to stop the program.
 
 
 ####Stacks and Queues:
