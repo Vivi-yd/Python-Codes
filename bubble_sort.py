@@ -5,9 +5,10 @@ def bubble_sort(lst):
     Input: an unsorted list
     Output: sorted list
     
-    sort the list by comparing 2 elements of this list at a time and
-    swap their position if the left is greater than the right until
-    no element on the left is greater than those on the right. 
+    sort the list by comparing 2 adjacent elements of the list 
+    at a time, swap their position if the left is greater than the 
+    right from beginning till end, repeat until no element on 
+    the left is greater than those on the right. 
     """
     cycle = len(lst)
    
