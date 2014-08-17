@@ -1,4 +1,4 @@
-#some basic sorting programs - vivi
+#bubble sorting program - vivi
 
 def bubble_sort(lst):
     """
@@ -19,5 +19,8 @@ def bubble_sort(lst):
        
         cycle -= 1
     
-    return lst                     
+    return lst
+    
+
+                                                                                            
                   
