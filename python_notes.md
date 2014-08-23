@@ -13,7 +13,7 @@
 
 ####Frozen Sets:
 * Same as sets but **Immutabe**, which means cannot be change but methods like union..etc stil can be used.
-* created by: `frozenset(["same", "as", "sets"])
+* created by: `frozenset(["same", "as", "sets"])`
 
 [examples usage](http://www.codeskulptor.org/#user37_F54mjdc1kz_3.py)
 
