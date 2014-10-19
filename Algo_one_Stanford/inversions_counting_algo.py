@@ -80,19 +80,21 @@ def sort_and_count(lst):
     
     lst_len = len(lst)
     
-    if lst_len == 1:
-        return 0
+    #base case
+    if lst_len < 2:
+        return lst, 0
     
+    #recursive case
     else:
         # count number of inversion in each half of the list
-        inv_count1 = sort_and_count(lst[:lst_len/2])
-        inv_count2 = sort_and_count(lst[lst_len/2:]) 
+        first_half, inv_count1 = sort_and_count(lst[:lst_len/2])
+        second_half, inv_count2 = sort_and_count(lst[lst_len/2:]) 
         
         # count number of inversion across the two halves
-        split_inv = merge_and_count_splitInv(lst[:lst_len/2], lst[lst_len/2:])
+        result_lst, split_inv = merge_and_count_splitInv(first_half, second_half)
     
-    return inv_count1 + inv_count2 + split_inv[1]
-
+        return result_lst, inv_count1 + inv_count2 + split_inv
+    
 
 L1 = [1, 2, 3, 4, 5, 6]
 L2 = [8, 7, 6, 5, 4, 3]
