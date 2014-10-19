@@ -82,7 +82,7 @@ def sort_and_count(lst):
         # count number of inversion across the two halves
         result_lst, split_inv = merge_and_count_splitInv(first_half, second_half)
     
-        return inv_count1 + inv_count2 + split_inv
+        return result_lst, inv_count1 + inv_count2 + split_inv
     
                                                                     
 
@@ -90,5 +90,5 @@ textlist = create_array()
 
 inversions= sort_and_count(textlist)
 
-print inversions
+print inversions[1]
     
