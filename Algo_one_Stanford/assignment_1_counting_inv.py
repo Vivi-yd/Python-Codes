@@ -3,7 +3,7 @@ def create_array():
     open, read and return a list of integers containing in the file give
     """
     
-    thefile = open('C:/Documents and Settings/steven/repos/Python-Codes/Algo_One_Stanford/IntegerArray.txt'
+    thefile = open('C:/Documents and Settings/steven/repos/Python-Codes/Algo_One_Stanford/assignment_1_IntegerArray.txt'
 , 'r')
     
     ans = []
